@@ -1,0 +1,180 @@
+header {
+    display: none;
+}
+
+/*Grid basic structure*/
+
+main {
+    display: grid;
+    grid-template-columns: 0.3fr 1.7fr;
+    grid-template-rows: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "left center";
+}
+
+.navegation {
+    grid-area: left; 
+    background-color: #004669;
+    border-style: solid;
+    border-color: #5A6970;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+}
+
+.center {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 1.8fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "top" "content";
+    grid-area: center;
+}
+
+.top { 
+    grid-area: top; 
+    background-color: #004669;
+    margin: 10px;
+    border: 2px solid #5A6970;
+}
+  
+.content {  
+    display: grid;
+    grid-template-columns: 1.6fr 0.4fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "area right";
+    grid-area: content;
+}
+  
+.area { 
+    grid-area: area; 
+    background-color: #99DDFF;
+    margin: 10px 10px 0px 10px;
+    border-style: solid;
+    border-color: #5A6970;
+    border-top-width: 2px;
+    border-bottom-width: 0px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+}
+  
+aside { 
+    grid-area: right; 
+    margin: 10px 10px 0px 10px;
+    border-style: solid;
+    border-color: #5A6970;
+    border-top-width: 2px;
+    border-bottom-width: 0px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+}
+
+/* Lateral menu*/
+
+ul, ol {
+    padding: 0;
+}
+
+.navegation ul {
+    background-color: white;
+    padding: 0px;
+    border: 0px;
+}
+
+.navegation ul li {
+    border-style: solid;
+    border-color: #5A6970;
+    border-top-width: 1.5px;
+    border-bottom-width: 0.5px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+.navegation ul li:hover, .navegation ul li:focus {
+    background-color: #F0BA78
+}
+
+.navegation ul li button {
+    font-weight: bold;
+    width: 100%;
+    color: #004669;
+}
+
+.navegation ul li button a {
+    color: #004669;
+    font-weight: bold;
+}
+
+.navegation ul #extra_border_top {
+    border-top-width: 0px;
+}
+
+.navegation ul #extra_border_button {
+    border-bottom-width: 2px;
+}
+
+.navegation ul li div li {
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    padding-left: 20px;
+}
+
+.navegation ul li div li a {
+    color: #004669;
+    font-weight: bold;
+}
+
+/* Top */
+
+.top h2 {
+    color: white;
+    padding: 5px 15px;
+}
+
+/* Area */
+
+.area h2 { 
+    padding: 5px 15px;
+    color: #004669;;
+}
+
+.area p { 
+    padding: 5px 15px;
+    color: #004669;;
+}
+
+/* Footer */
+
+footer {
+    background-color: #A37031;
+    padding: 5px 15px;
+    border-style: solid;
+    border-color: #5A6970;
+    border-top-width: 2px;
+    border-bottom-width: 0px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    margin-right: 10px;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+  
+
+
+
+
+
+
