@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>Conocer los fundamientos de HTML y la Interacción</title>
+</head>
+<body>
+  <header>
+    <h1>Fundamentos de HTML</h1>
+  </header>
+  <main>
+    <nav class="flex-shrink-0 navegation">
+      <ul>
+        <li id="extra_border_top">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-target="#inicio" aria-expanded="false">
+            <a href="design.html" class="d-inline-flex text-decoration-none rounded">Inicio</a>
+          </button>
+        </li>
+        <li>
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#temas" aria-expanded="true">Temas</button>
+          <div class="collapse" id="temas">
+            <ul class="btn-toggle-nav list-unstyled fw-normal">
+              <li><a href="fundamentos.html" class="d-inline-flex text-decoration-none rounded">Fundamentos de HTML</a></li>
+              <li><a href="interaccion.html" class="d-inline-flex text-decoration-none rounded">Interacción Humano Ordenador</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#recursos_digitales" aria-expanded="true">Recursos Digitales</button>
+          <div class="collapse" id="recursos_digitales">
+            <ul class="btn-toggle-nav list-unstyled fw-normall">
+              <li><a href="#" class="d-inline-flex text-decoration-none rounded">Recurso 1</a></li>
+              <li><a href="#" class="d-inline-flex text-decoration-none rounded">Recurso 2</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#aprendizaje" aria-expanded="true">Aprendizaje</button>
+          <div class="collapse" id="aprendizaje">
+            <ul class="btn-toggle-nav list-unstyled fw-normal">
+              <li><a href="#" class="d-inline-flex text-decoration-none rounded">Actividad 1</a></li>
+              <li><a href="#" class="d-inline-flex text-decoration-none rounded">Actividad 2</a></li>
+            </ul>
+          </div>
+        </li>
+        <li id="extra_border_button">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#acerca_de" aria-expanded="false">
+            <a href="#" class="d-inline-flex text-decoration-none rounded">Acerca de</a>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <section class="center">
+      <article class="top">
+        <h2>Fundamentos de HTML</h2>
+      </article>
+      <section class="content">
+        <article class="area">
+          <h2>Que conocemos como HTML</h2>
+          <p>
+            El HTML es el lenguaje de marcado el cual es el estándar actual para la creación de las paginas web, especificando que es HTML, este tipo de lenguaje por sus silabas significa lenguaje de marcado de hipertexto o HTML, este código describe la estructura de la pagina web, y con esta estructura el navegador reconocer y puede mostrar el contenido que sea fácil de leer para las personas, de manera simple el navegador toma las etiquetas de encabezados, párrafos entre otras y las traduce para que nosotros como usuarios las podamos entender fácilmente.
+          </p>
+          <h2>Estructura básica de un archivo HTML</h2>
+          <p>
+            La estructura básica de un archivo HTML puede ya mostrar contenido en pantalla y esta se organiza de la siguiente manera:
+          </p>
+          <p>
+            &lt;!DOCTYPE html&gt;<br/>
+            &lt;html&gt;<br/>
+            &lt;head&gt;<br/>
+            &lt;title&gt;Titulo&lt;/title&gt;<br/>
+            &lt;/head&gt;<br/>
+            &lt;body&gt;<br/>
+            &lt;h1&gt;Titulo contenido&lt;/h1&gt;<br/>
+            &lt;p&gt;Párrafo&lt;/p&gt;<br/>
+            &lt;/body&gt;<br/>
+            &lt;/html&gt;
+          </p>
+          <p>
+            Las etiquetas mostradas anteriormente mostradas tienen una explicación y un detalle del porqué, de cada una de ellas, a continuación, se detallan las mismas:
+          </p>
+            <ul>
+                <li>&lt;!DOCTYPE html&gt;: Etiqueta especifica si es un documento con tecnología HTML5</li>
+                <li>&lt;html&gt;: Etiqueta el elemento raíz de toda página web HTML</li>
+                <li>&lt;head&gt;: Etiqueta que contiene toda la metainformación de la página HMTL</li>
+                <li>&lt;title&gt;: Etiqueta que especifica el titulo de la página web (el nombre que aparece en el navegador)</li>
+                <li>&lt;body&gt;: Etiqueta que define el contenido del documento es el contenedor donde se muestran todos los objetos visuales de la pagina</li>
+                <li>&lt;h1&gt;: Etiqueta que especifica el encabezado principal de la pagina</li>
+                <li>&lt;p&gt;: Etiqueta que especifica un párrafo en la pagina</li>
+            </ul>
+        <h2>Elementos de un HTML</h2>
+        <p>
+            La estructura de un elemento HTML se define mediante una etiqueta de inicio, luego un contenido y después se define una etiqueta de finalización.
+        </p>
+        <p>
+            &lt;nombre de la etiqueta&gt; El contenido va aquí... &lt;/nombre de la etiqueta&gt;
+        </p>
+        <p>
+            Se conoce como elemento HTML todo el contenido de la etiqueta de inicio hasta la etiqueta final\
+        </p>
+        <p>
+            &lt;h1&gt; Mi primer encabezado &lt;/h1&gt;
+        </p>
+        <p>
+            &lt;p&gt; Mi primer párrafo. &lt;/p&gt;
+        </p>
+        <p>
+            Hay etiquetas que tienen que solo tiene una etiqueta de inicio y final y hay otras etiquetas que solo tiene etiqueta de inicio.
+        </p>
+        <p>
+            Salto de página &lt;br/&gt;
+        </p>
+        <h2>Como funcionan los navegadores web</h2>
+        <p>
+            El propósito de los navegadores web como lo son (Chrome, Edge, Firefox, Safari) es leer cada uno de los documentos HTML y mostrarlos de manera indicada. Los navegadores no muestran las etiquetas HTML, pero este las usa para determinar como se muestra el contenido.
+        </p>
+        <h2>Estructura de una página HTML</h2>
+        <p>
+            También se debe tener en cuenta que la estructura de una pagina web funciona de manera anidada y esto permite que se pueda agrupar el código de la siguiente manera.
+        </p>
+        <img src="img/html_introduction.png" alt="estructura"/>
+        <h2>Historia resumida de las versiones de HTML</h2>
+        <ul>
+            <li>1989: Tim Berners-Lee invento el www o el internet.</li>
+            <li>1991: Tim Berners-Lee invento la estructura HTML.</li>
+            <li>1993: David Raggett realizo la estructuración del HTML +</li>
+            <li>1995: Se establece el grupo de trabajo HTML en el cual se avanza y define la versión HTML 2.0</li>
+            <li>1997: Recomendaciones W3C para la estructuración de HTML 3.2</li>
+            <li>1999: Recomendaciones W3C para la estructuración de HTML 4.01</li>
+            <li>2000: Recomendaciones W3C para la estructuración de XHTML 1.0</li>
+            <li>2008: Primer borrador público de WHATWG he incorporación en HTML 5</li>
+            <li>2012: Estructuración de WHATWG en el estándar de vida en HTML 5</li>
+            <li>2014: Recomendaciones W3C para la estructuración de HTML 5</li>
+            <li>2016: Recomendaciones W3C para la versión candidata de HTML 5.1</li>
+            <li>2017: Recomendaciones W3C para la estructuración de HTML 5.1 segunda edición</li>
+            <li>2017: Recomendaciones W3C para la estructuración de HTML 5.2</li>
+        </ul>
+        <p>
+            w3schools. (s.f). <i>HTML Introduction</i>. Recuperado el 19 de septiembre 2022. <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">https://www.w3schools.com/html/html_intro.asp</a>
+        </p>
+        </article>
+        <aside>
+          <p class="timeline"><a class="twitter-timeline" data-height="2400" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by Universidad UNAD</a></p>
+        </aside>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <p>
+      Correo: davidbernalem@gmail.com <br>
+      Skype: live:davidbernalem <br>
+      Fecha de actualizacion: 19 de octubre de 2022
+    </p>
+  </footer>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
