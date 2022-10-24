@@ -109,6 +109,7 @@ ul, ol {
 .navegation ul li button a {
     color: #004669;
     font-weight: bold;
+    width: 100%;
 }
 
 .navegation ul #extra_border_top {
@@ -130,6 +131,7 @@ ul, ol {
 .navegation ul li div li a {
     color: #004669;
     font-weight: bold;
+    width: 100%;
 }
 
 /* Top */
@@ -141,6 +143,10 @@ ul, ol {
 
 /* Area */
 
+.area ul li {
+    color: #004669;
+}
+
 .area h2 { 
     padding: 5px 15px;
     color: #004669;;
@@ -149,6 +155,37 @@ ul, ol {
 .area p { 
     padding: 5px 15px;
     color: #004669;;
+}
+
+.images_area {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.code_box{
+    background-color: white;
+    margin: 10px;
+    border-radius: 1%;
+    border: dashed 1.5px #5A6970;
+}
+
+#perfil {
+    display: block;
+    margin-top: 10px;
+}
+
+#perfil_imagen img{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 16%;
+    height: 16%;
+    border-radius: 50%;
+}
+
+#perfil_texto ul {
+    list-style: none;
+    padding-left: 1rem;
 }
 
 /* Footer */

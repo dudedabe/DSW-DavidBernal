@@ -33,8 +33,8 @@
           <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#recursos_digitales" aria-expanded="true">Recursos Digitales</button>
           <div class="collapse" id="recursos_digitales">
             <ul class="btn-toggle-nav list-unstyled fw-normall">
-              <li><a href="#" class="d-inline-flex text-decoration-none rounded">Recurso 1</a></li>
-              <li><a href="#" class="d-inline-flex text-decoration-none rounded">Recurso 2</a></li>
+              <li><a href="recurso1.html" class="d-inline-flex text-decoration-none rounded">Recurso 1</a></li>
+              <li><a href="recurso2.html" class="d-inline-flex text-decoration-none rounded">Recurso 2</a></li>
             </ul>
           </div>
         </li>
@@ -42,14 +42,14 @@
           <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#aprendizaje" aria-expanded="true">Aprendizaje</button>
           <div class="collapse" id="aprendizaje">
             <ul class="btn-toggle-nav list-unstyled fw-normal">
-              <li><a href="#" class="d-inline-flex text-decoration-none rounded">Actividad 1</a></li>
-              <li><a href="#" class="d-inline-flex text-decoration-none rounded">Actividad 2</a></li>
+              <li><a href="actividad1.html" class="d-inline-flex text-decoration-none rounded">Actividad 1</a></li>
+              <li><a href="actividad2.html" class="d-inline-flex text-decoration-none rounded">Actividad 2</a></li>
             </ul>
           </div>
         </li>
         <li id="extra_border_button">
-          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#acerca_de" aria-expanded="false">
-            <a href="#" class="d-inline-flex text-decoration-none rounded">Acerca de</a>
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-target="#acerca_de" aria-expanded="false">
+            <a href="acerca.html" class="d-inline-flex text-decoration-none rounded">Acerca de</a>
           </button>
         </li>
       </ul>
@@ -68,7 +68,7 @@
           <p>
             La estructura básica de un archivo HTML puede ya mostrar contenido en pantalla y esta se organiza de la siguiente manera:
           </p>
-          <p>
+          <p class="code_box">
             &lt;!DOCTYPE html&gt;<br/>
             &lt;html&gt;<br/>
             &lt;head&gt;<br/>
@@ -84,34 +84,34 @@
             Las etiquetas mostradas anteriormente mostradas tienen una explicación y un detalle del porqué, de cada una de ellas, a continuación, se detallan las mismas:
           </p>
             <ul>
-                <li>&lt;!DOCTYPE html&gt;: Etiqueta especifica si es un documento con tecnología HTML5</li>
-                <li>&lt;html&gt;: Etiqueta el elemento raíz de toda página web HTML</li>
-                <li>&lt;head&gt;: Etiqueta que contiene toda la metainformación de la página HMTL</li>
-                <li>&lt;title&gt;: Etiqueta que especifica el titulo de la página web (el nombre que aparece en el navegador)</li>
-                <li>&lt;body&gt;: Etiqueta que define el contenido del documento es el contenedor donde se muestran todos los objetos visuales de la pagina</li>
-                <li>&lt;h1&gt;: Etiqueta que especifica el encabezado principal de la pagina</li>
-                <li>&lt;p&gt;: Etiqueta que especifica un párrafo en la pagina</li>
+                <li><strong>&lt;!DOCTYPE html&gt;</strong>: Etiqueta especifica si es un documento con tecnología HTML5</li>
+                <li><strong>&lt;html&gt;</strong>: Etiqueta el elemento raíz de toda página web HTML</li>
+                <li><strong>&lt;head&gt;</strong>: Etiqueta que contiene toda la metainformación de la página HMTL</li>
+                <li><strong>&lt;title&gt;</strong>: Etiqueta que especifica el titulo de la página web (el nombre que aparece en el navegador)</li>
+                <li><strong>&lt;body&gt;</strong>: Etiqueta que define el contenido del documento es el contenedor donde se muestran todos los objetos visuales de la pagina</li>
+                <li><strong>&lt;h1&gt;</strong>: Etiqueta que especifica el encabezado principal de la pagina</li>
+                <li><strong>lt;p&gt;</strong>: Etiqueta que especifica un párrafo en la pagina</li>
             </ul>
         <h2>Elementos de un HTML</h2>
         <p>
             La estructura de un elemento HTML se define mediante una etiqueta de inicio, luego un contenido y después se define una etiqueta de finalización.
         </p>
-        <p>
+        <p class="code_box">
             &lt;nombre de la etiqueta&gt; El contenido va aquí... &lt;/nombre de la etiqueta&gt;
         </p>
         <p>
             Se conoce como elemento HTML todo el contenido de la etiqueta de inicio hasta la etiqueta final\
         </p>
-        <p>
+        <p class="code_box">
             &lt;h1&gt; Mi primer encabezado &lt;/h1&gt;
         </p>
-        <p>
+        <p class="code_box">
             &lt;p&gt; Mi primer párrafo. &lt;/p&gt;
         </p>
         <p>
             Hay etiquetas que tienen que solo tiene una etiqueta de inicio y final y hay otras etiquetas que solo tiene etiqueta de inicio.
         </p>
-        <p>
+        <p class="code_box">
             Salto de página &lt;br/&gt;
         </p>
         <h2>Como funcionan los navegadores web</h2>
@@ -122,22 +122,24 @@
         <p>
             También se debe tener en cuenta que la estructura de una pagina web funciona de manera anidada y esto permite que se pueda agrupar el código de la siguiente manera.
         </p>
-        <img src="img/html_introduction.png" alt="estructura"/>
+        <div class="images_area">
+          <img src="img/html_introduction.png" alt="estructura"/>
+        </div>
         <h2>Historia resumida de las versiones de HTML</h2>
         <ul>
-            <li>1989: Tim Berners-Lee invento el www o el internet.</li>
-            <li>1991: Tim Berners-Lee invento la estructura HTML.</li>
-            <li>1993: David Raggett realizo la estructuración del HTML +</li>
-            <li>1995: Se establece el grupo de trabajo HTML en el cual se avanza y define la versión HTML 2.0</li>
-            <li>1997: Recomendaciones W3C para la estructuración de HTML 3.2</li>
-            <li>1999: Recomendaciones W3C para la estructuración de HTML 4.01</li>
-            <li>2000: Recomendaciones W3C para la estructuración de XHTML 1.0</li>
-            <li>2008: Primer borrador público de WHATWG he incorporación en HTML 5</li>
-            <li>2012: Estructuración de WHATWG en el estándar de vida en HTML 5</li>
-            <li>2014: Recomendaciones W3C para la estructuración de HTML 5</li>
-            <li>2016: Recomendaciones W3C para la versión candidata de HTML 5.1</li>
-            <li>2017: Recomendaciones W3C para la estructuración de HTML 5.1 segunda edición</li>
-            <li>2017: Recomendaciones W3C para la estructuración de HTML 5.2</li>
+            <li><strong>1989</strong>: Tim Berners-Lee invento el www o el internet.</li>
+            <li><strong>1991</strong>: Tim Berners-Lee invento la estructura HTML.</li>
+            <li><strong>1993</strong>: David Raggett realizo la estructuración del HTML +</li>
+            <li><strong>1995</strong>: Se establece el grupo de trabajo HTML en el cual se avanza y define la versión HTML 2.0</li>
+            <li><strong>1997</strong>: Recomendaciones W3C para la estructuración de HTML 3.2</li>
+            <li><strong>1999</strong>: Recomendaciones W3C para la estructuración de HTML 4.01</li>
+            <li><strong>2000</strong>: Recomendaciones W3C para la estructuración de XHTML 1.0</li>
+            <li><strong>2008</strong>: Primer borrador público de WHATWG he incorporación en HTML 5</li>
+            <li><strong>2012</strong>: Estructuración de WHATWG en el estándar de vida en HTML 5</li>
+            <li><strong>2014</strong>: Recomendaciones W3C para la estructuración de HTML 5</li>
+            <li><strong>2016</strong>: Recomendaciones W3C para la versión candidata de HTML 5.1</li>
+            <li><strong>2017</strong>: Recomendaciones W3C para la estructuración de HTML 5.1 segunda edición</li>
+            <li><strong>2017</strong>: Recomendaciones W3C para la estructuración de HTML 5.2</li>
         </ul>
         <p>
             w3schools. (s.f). <i>HTML Introduction</i>. Recuperado el 19 de septiembre 2022. <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">https://www.w3schools.com/html/html_intro.asp</a>
