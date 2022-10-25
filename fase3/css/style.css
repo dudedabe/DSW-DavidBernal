@@ -188,6 +188,24 @@ ul, ol {
     padding-left: 1rem;
 }
 
+.contenedor_video {
+	position: relative;
+	padding-bottom: 56.25%; /* proporción 16:9 */
+	padding-top: 25px;
+	height: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.contenedor_video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 /* Footer */
 
 footer {
