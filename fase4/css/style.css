@@ -75,6 +75,41 @@ aside {
     border-right-width: 2px;
 }
 
+/*Bootstrap modification*/
+
+.special {
+    grid-area: none; 
+    margin: 0;
+    border-left-width: 0px;
+}
+
+.specialcon{
+    background-color: #99DDFF;
+    margin: 0 10px;
+}
+
+.specialcon div section article {
+    border-style: solid;
+    border-color: #5A6970;
+    border-top-width: 2px;
+    border-bottom-width: 0px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+}
+
+.specialcon div section aside {
+    background-color: #FFFFFF;
+}
+
+.specialcon h2 {
+    padding-top: 10px;
+    color: #004669;;
+}
+
+.specialcon p {
+    color: #004669;;
+}
+
 /* Lateral menu*/
 
 ul, ol {
@@ -206,6 +241,14 @@ ul, ol {
 	height: 100%;
 }
 
+.cuestionario{
+    width: 100%;
+}
+
+.m7w29c{
+    border: dashed 1.5px #5A6970;
+}
+
 /* Footer */
 
 footer {
@@ -224,6 +267,22 @@ footer p {
     margin: 0;
     color: white;
     text-align: center;
+}
+
+/*Media queries*/
+@media screen and (max-width: 767px) {
+    .navegation ul li button a {
+        font-size: 10px;
+    }
+    .navegation ul li button {
+        font-size: 10px;
+    }
+    .navegation ul li div li a {
+        font-size: 10px;
+    }
+    .special {
+        border-left-width: 2px;
+    }
 }
 
   
